@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/stylee.css">
+    <title>E-Commerce</title>
+</head>
+
+<body>
+    <!-- Start Navbar   -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary justify-content-between">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">E-commerce Clothse</a>
+            <a class="navbar-toggler meua-bar" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+
+            <div class="collapse navbar-collapse  " id="navbarText" style="background-color: #002444 ">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Product
+                        </a>
+                        <ul class="dropdown-menu ">
+                            <li><a class="dropdown-item" href="#Electronic">Electronic</a></li>
+                            <li><a class="dropdown-item" href="#Furniture">Furniture </a></li>
+                            <li><a class="dropdown-item" href="#shoes">Shoes</a></li>
+                            <li><a class="dropdown-item" href="#Beauty">Beauty</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#Contact" aria-disabled="true">Contact</a>
+                    </li>
+                </ul>
+                <form class="d-flex align-items-center justify-content-center" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <a href="">
+                        <i class="fa-regular fa-user"></i>
+                    </a>
+                    <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">
+                        <i class="fa-solid fa-cart-shopping  "></i>
+                    </a>
+
+
+                </form>
+
+            </div>
+        </div>
+    </nav>
+    <!-- start Pop Cart in navbar -->
+    <div class="modal modal-cart fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog ">
+            <div class="modal-content">
+                <div class="modal-header  border-bottom-0">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Cart Items</h1>
+                    <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="Orderproduct p-1 ">
+                        <img src="./Images/Electronic/technology6.png" alt="">
+                        <h2>Games</h2>
+                        <h2>50 $ </h2>
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-trash"></i>
+                    </div>
+                    <div class="Orderproduct  p-1">
+                        <img src="./Images/Beauty/Beauty4.png" alt="">
+                        <h2>Beauty</h2>
+                        <h2>150 $ </h2>
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-trash"></i>
+                    </div>
+                    <div class="Orderproduct  p-1">
+                        <img src="./Images/Furniture/Furniture2.png" alt="">
+                        <h2>Office Chair</h2>
+                        <h2>250 $ </h2>
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-trash"></i>
+                    </div>
+                    <div class="Orderproduct  p-1 ">
+                        <img src="./Images/Shoes/Shoes1.png" alt="">
+                        <h2>Shoes Adidas </h2>
+                        <h2>100 $ </h2>
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-trash"></i>
+                    </div>
+                    <div class="Orderproduct  p-1">
+                        <img src="./Images/Electronic/electronics2.png" alt="">
+                        <h2>Head Phone</h2>
+                        <h2>200 $ </h2>
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-trash"></i>
+                    </div>
+                </div>
+                <div class="modal-footer border-top-0 d-flex justify-content-between">
+                    <div class="Footer-salary d-flex align-items-center">
+                        <h4>Total :</h4>
+                        <span>750 $</span>
+                    </div>
+                    <div>
+
+                        <button type="button" class="btn btn-success me-1" data-bs-whatever="@getbootstrap">Proceed To
+                            Buy</button>
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel Order</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Pop Cart in navbar -->
+    <!--  End  Navbar   -->
+    <!--Start carousels    -->
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./Images/61VPBEnVILL._SX3000_.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./Images/51nbTQlqq4L._SX1500_.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./Images/61heUjys1FL._SX3000_.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev">
+            <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next">
+            <i class="fa-solid fa-arrow-right " aria-hidden="true"></i>
+        </button>
+    </div>
+    <!--End carousels -->
+    <!-- Start  Product Electronic -->
+    <section class="parentProduct " id="Electronic">
+        <h2 class="text-center headerProduct">Electronic</h2>
+        <div class="Product-Electronic">
+            <!-- product one -->
+            <div class="cardProduct">
+                <img class="img-product" src="./Images/Electronic/electronic5.png" alt="Card image cap">
+                <div class="Cottant-card ">
+                    <div class="NameProduct">
+                        <h3>Camera Canon</h3>
+                        <span>150 $</span>
+                    </div>
+                    <div class="CartProduct">
+                        <!-- Button trigger modal -->
+                        <a href="" data-bs-toggle="modal" data-bs-target="#CartProduct1">
+                            <i class="fa-solid fa-cart-shopping  "></i>
+                        </a>
+                        <!-- Pop Name Product  -->
+                        <!-- Modal -->
+                        <div class="modal fade" id="CartProduct1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content ">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Electronic </h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body ">
+                                        <div class="card  mb-3" style="max-width: 540px;">
+                                            <div class="row g-0">
+                                                <div class="col-md-4">
+                                                    <img src="./Images/Electronic/electronic5.png" class="  ss"
+                                                        alt="...">
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title text-light fs-4 fw-bolder"> Name : Camera
+                                                            Canon
+                                                        </h5>
+                                                        <p class="card-text text-light fs-5 fw-bold"> Salary : 150$ </p>
+                                                        <p class="card-text text-light  fs-5 text-break ">specifications
+                                                            :
+                                                            Canon
+                                                            EOS 250D +
+                                                            Canon EF-s 18-55mm + f/4-5.6 is STM Lens - Black</p>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer border-top-0">
+                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel
+                                            Order
+                                        </button>
+                                        <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap"
+                                            role="button" data-bs-dismiss="modal">Order Request
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Pop Name Product  -->
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- product Two -->
+            <div class="cardProduct">
+                <img class="img-product" src="./Images/Electronic/Electronics3.png" alt="Card image cap">
+                <div class="Cottant-card ">
+                    <div class="NameProduct">
+                        <h3>Head Phone </h3>
+                        <span>150 $</span>
+                    </div>
+                    <div class="CartProduct">
+                        <!-- Button trigger modal -->
+                        <a href="" data-bs-toggle="modal" data-bs-target="#CartProduct2">
+                            <i class="fa-solid fa-cart-shopping  "></i>
+                        </a>
+                        <!-- Pop Name Product  -->
+                        <!-- Modal -->
+                        <div class="modal fade" id="CartProduct2" tabindex="-1" aria-labelledby="exampleModalLabe2"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered ">
+                                <div class="modal-content ">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabe2">Electronic </h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body ">
+                                        <div class="card  mb-3" style="max-width: 540px;">
+                                            <div class="row g-0">
+                                                <div class="col-md-4">
+                                                    <img src="./Images/Electronic/Electronics3.png" class="  ss"
+                                                        alt="...">
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title text-light fs-4 fw-bolder"> Name : Head
+                                                            Phone
+                                                        </h5>
+                                                        <p class="card-text text-light fs-5 fw-bold"> Salary : 150$ </p>
+                                                        <p class="card-text text-light  fs-5 text-break ">specifications
+                                                            :
+                                                            Canon
+                                                            EOS 250D +
+                                                            Canon EF-s 18-55mm + f/4-5.6 is STM Lens - Black</p>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer border-top-0">
+                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel
+                                            Order
+                                        </button>
+                                        <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap"
+                                            role="button" data-bs-dismiss="modal">Order Request
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Pop Name Product  -->
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- product Three -->
+            <div class="cardProduct">
+                <img class="img-product" src="./Images/Electronic/technology6.png" alt="Card image cap">
+                <div class="Cottant-card ">
+                    <div class="NameProduct">
+                        <h3>Games </h3>
+                        <span>150 $</span>
+                    </div>
+                    <div class="CartProduct">
+                        <!-- Button trigger modal -->
+                        <a href="" data-bs-toggle="modal" data-bs-target="#CartProduct3">
+                            <i class="fa-solid fa-cart-shopping  "></i>
+                        </a>
+                        <!-- Pop Name Product  -->
+                        <!-- Modal -->
+                        <div class="modal fade" id="CartProduct3" tabindex="-1" aria-labelledby="exampleModalLabe3"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered ">
+                                <div class="modal-content ">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabe3">Electronic </h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body ">
+                                        <div class="card  mb-3" style="max-width: 540px;">
+                                            <div class="row g-0">
+                                                <div class="col-md-4">
+                                                    <img src="./Images/Electronic/technology6.png" class="  ss"
+                                                        alt="...">
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title text-light fs-4 fw-bolder"> Name : Games
+                                                        </h5>
+                                                        <p class="card-text text-light fs-5 fw-bold"> Salary : 150$ </p>
+                                                        <p class="card-text text-light  fs-5 text-break ">specifications
+                                                            :
+                                                            Canon EF-s 18-55mm + f/4-5.6 is STM Lens - Black</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer border-top-0">
+                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel
+                                            Order
+                                        </button>
+                                        <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap"
+                                            role="button" data-bs-dismiss="modal">Order Request
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Pop Name Product  -->
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End   Product Electronic -->
+    <!-- Start  Product Furniture -->
+    <section class="parentProduct " id="Furniture">
+        <h2 class="text-center headerProduct">Furniture</h2>
+        <div class="Product-Electronic">
+            <!-- product one -->
+            <div class="cardProduct">
+                <img class="img-product" src="./Images/Furniture/Furniture3.png" alt="Card image cap">
+                <div class="Cottant-card ">
+                    <div class="NameProduct">
+                        <h3>Corner chair </h3>
+                        <span>150 $</span>
+                    </div>
+                    <div class="CartProduct">
+                        <!-- Button trigger modal -->
+                        <a href="" data-bs-toggle="modal" data-bs-target="#CartFurniture1">
+                            <i class="fa-solid fa-cart-shopping  "></i>
+                        </a>
+                        <!-- Pop Name Product  -->
+                        <!-- Modal -->
+                        <div class="modal fade" id="CartFurniture1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content  ">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Furniture </h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body ">
+                                        <div class="card  mb-3" style="max-width: 540px;">
+                                            <div class="row g-0">
+                                                <div class="col-md-4">
+                                                    <img src="./Images/Furniture/Furniture3.png" class="  ss" alt="...">
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title text-light fs-4 fw-bolder"> Name : Corner
+                                                            chair
+
+                                                        </h5>
+                                                        <p class="card-text text-light fs-5 fw-bold"> Salary : 150$ </p>
+                                                        <p class="card-text text-light  fs-5 text-break ">specifications
+                                                            : Homztown Chair Bean Bag Navy Blue 75 x 92 cm</p>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer border-top-0">
+                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel
+                                            Order
+                                        </button>
+                                        <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap"
+                                            role="button" data-bs-dismiss="modal">Order Request
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Pop Name Product  -->
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- product Two -->
+            <div class="cardProduct">
+                <img class="img-product" src="./Images/Furniture/Furniture2.png" alt="Card image cap">
+                <div class="Cottant-card ">
+                    <div class="NameProduct">
+                        <h3>Office Chair </h3>
+                        <span>50 $</span>
+                    </div>
+                    <div class="CartProduct">
+                        <!-- Button trigger modal -->
+                        <a href="" data-bs-toggle="modal" data-bs-target="#CartFurniture2">
+                            <i class="fa-solid fa-cart-shopping  "></i>
+                        </a>
+                        <!-- Pop Name Product  -->
+                        <!-- Modal -->
+                        <div class="modal fade" id="CartFurniture2" tabindex="-1" aria-labelledby="exampleModalLabe2"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered ">
+                                <div class="modal-content ">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabe2">Furniture </h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body ">
+                                        <div class="card  mb-3" style="max-width: 540px;">
+                                            <div class="row g-0">
+                                                <div class="col-md-4">
+                                                    <img src="./Images/Furniture/Furniture2.png" class="  ss" alt="...">
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title text-light fs-4 fw-bolder"> Name : Office
+                                                            Chair
+                                                        </h5>
+                                                        <p class="card-text text-light fs-5 fw-bold"> Salary : 150$ </p>
+                                                        <p class="card-text text-light  fs-5 text-break ">
+                                                            specifications : Homztown Chair Bean Bag Navy Blue 75 x 92
+                                                            cm</p>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer border-top-0">
+                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel
+                                            Order
+                                        </button>
+                                        <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap"
+                                            role="button" data-bs-dismiss="modal">Order Request
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Pop Name Product  -->
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- product Three -->
+            <div class="cardProduct">
+                <img class="img-product" src="./Images/Furniture/Furniture6.png" alt="Card image cap">
+                <div class="Cottant-card ">
+                    <div class="NameProduct">
+                        <h3>Abjurat </h3>
+                        <span>150 $</span>
+                    </div>
+                    <div class="CartProduct">
+                        <!-- Button trigger modal -->
+                        <a href="" data-bs-toggle="modal" data-bs-target="#CartFurniture3">
+                            <i class="fa-solid fa-cart-shopping  "></i>
+                        </a>
+                        <!-- Pop Name Product  -->
+                        <!-- Modal -->
+                        <div class="modal fade" id="CartFurniture3" tabindex="-1" aria-labelledby="exampleModalLabe3"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content ">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabe3">Furniture </h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body ">
+                                        <div class="card  mb-3" style="max-width: 540px;">
+                                            <div class="row g-0">
+                                                <div class="col-md-4">
+                                                    <img src="./Images/Furniture/Furniture6.png" class="  ss" alt="...">
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title text-light fs-4 fw-bolder"> Name : Abjurat
+                                                        </h5>
+                                                        <p class="card-text text-light fs-5 fw-bold"> Salary : 150$ </p>
+                                                        <p class="card-text text-light  fs-5 text-break ">specifications
+                                                            : Homztown Chair Bean Bag Navy Blue 75 x 92 cm</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer border-top-0">
+                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel
+                                            Order
+                                        </button>
+                                        <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap"
+                                            role="button" data-bs-dismiss="modal">Order Request
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Pop Name Product  -->
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End   Product Furniture -->
+    <!-- Start  Product shoes -->
+    <section class="parentProduct " id="shoes">
+        <h2 class="text-center headerProduct">shoes</h2>
+        <div class="Product-Electronic">
+            <!-- product one -->
+            <div class="cardProduct">
+                <img class="img-product" src="./Images/Shoes/Shoes4.png" alt="Card image cap">
+                <div class="Cottant-card ">
+                    <div class="NameProduct">
+                        <h3>Shoes Adidas </h3>
+                        <span>150 $</span>
+                    </div>
+                    <div class="CartProduct">
+                        <!-- Button trigger modal -->
+                        <a href="" data-bs-toggle="modal" data-bs-target="#CartShoes1">
+                            <i class="fa-solid fa-cart-shopping  "></i>
+                        </a>
+                        <!-- Pop Name Product  -->
+                        <!-- Modal -->
+                        <div class="modal fade" id="CartShoes1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog  modal-dialog-centered">
+                                <div class="modal-content ">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Shoes </h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body ">
+                                        <div class="card  mb-3" style="max-width: 540px;">
+                                            <div class="row g-0">
+                                                <div class="col-md-4">
+                                                    <img src="./Images/Shoes/Shoes4.png" class="  ss" alt="...">
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title text-light fs-4 fw-bolder"> Name :Shoes
+                                                            Adidas
+                                                        </h5>
+                                                        <p class="card-text text-light fs-5 fw-bold"> Salary : 150$ </p>
+                                                        <p class="card-text text-light  fs-5 text-break ">specifications
+                                                            : Romba Sport Shoes For Men
+                                                        </p>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer border-top-0">
+                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel
+                                            Order
+                                        </button>
+                                        <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap"
+                                            role="button" data-bs-dismiss="modal">Order Request
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Pop Name Product  -->
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- product Two -->
+            <div class="cardProduct">
+                <img class="img-product" src="./Images/Shoes/Shoes3.png" alt="Card image cap">
+                <div class="Cottant-card ">
+                    <div class="NameProduct">
+                        <h3>Shoes Nike </h3>
+                        <span>150 $</span>
+                    </div>
+                    <div class="CartProduct">
+                        <!-- Button trigger modal -->
+                        <a href="" data-bs-toggle="modal" data-bs-target="#CartShoes2">
+                            <i class="fa-solid fa-cart-shopping  "></i>
+                        </a>
+                        <!-- Pop Name Product  -->
+                        <!-- Modal -->
+                        <div class="modal fade" id="CartShoes2" tabindex="-1" aria-labelledby="exampleModalLabe2"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content ">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabe2">Shoes </h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body ">
+                                        <div class="card  mb-3" style="max-width: 540px;">
+                                            <div class="row g-0">
+                                                <div class="col-md-4">
+                                                    <img src="./Images/Shoes/Shoes3.png" class="  ss" alt="...">
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title text-light fs-4 fw-bolder"> Name : Shoes
+                                                            Nike
+                                                        </h5>
+                                                        <p class="card-text text-light fs-5 fw-bold"> Salary : 150$ </p>
+                                                        <p class="card-text text-light  fs-5 text-break ">specifications
+                                                            : Romba Sport Shoes For Men
+                                                        </p>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer border-top-0">
+                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel
+                                            Order
+                                        </button>
+                                        <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap"
+                                            role="button" data-bs-dismiss="modal">Order Request
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Pop Name Product  -->
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- product Three -->
+            <div class="cardProduct">
+                <img class="img-product" src="/Images/Shoes/Shoes1.png" alt="Card image cap">
+                <div class="Cottant-card ">
+                    <div class="NameProduct">
+                        <h3>Shoes Puma </h3>
+                        <span>150 $</span>
+                    </div>
+                    <div class="CartProduct">
+                        <!-- Button trigger modal -->
+                        <a href="" data-bs-toggle="modal" data-bs-target="#CartShoes3">
+                            <i class="fa-solid fa-cart-shopping  "></i>
+                        </a>
+                        <!-- Pop Name Product  -->
+                        <!-- Modal -->
+                        <div class="modal fade" id="CartShoes3" tabindex="-1" aria-labelledby="exampleModalLabe3"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content ">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabe3">Shoes </h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body ">
+                                        <div class="card  mb-3" style="max-width: 540px;">
+                                            <div class="row g-0">
+                                                <div class="col-md-4">
+                                                    <img src="./Images/Shoes/Shoes1.png" class="  ss" alt="...">
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title text-light fs-4 fw-bolder"> Name : Shoes
+                                                            Puma
+                                                        </h5>
+                                                        <p class="card-text text-light fs-5 fw-bold"> Salary : 150$ </p>
+                                                        <p class="card-text text-light  fs-5 text-break ">specifications
+                                                            : Romba Sport Shoes For Men
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer border-top-0">
+                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel
+                                            Order
+                                        </button>
+                                        <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap"
+                                            role="button" data-bs-dismiss="modal">Order Request
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Pop Name Product  -->
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End   Product shoes -->
+    <!-- Start  Product Beauty Tools -->
+    <section class="parentProduct " id="Beauty">
+        <h2 class="text-center headerProduct">Beauty Tools</h2>
+        <div class="Product-Electronic">
+            <!-- product one -->
+            <div class="cardProduct">
+                <img class="img-product" src="./Images/Beauty/Beauty5.png" alt="Card image cap">
+                <div class="Cottant-card ">
+                    <div class="NameProduct">
+                        <h3>Beauty 1 </h3>
+                        <span>150 $</span>
+                    </div>
+                    <div class="CartProduct">
+                        <!-- Button trigger modal -->
+                        <a href="" data-bs-toggle="modal" data-bs-target="#CartBeauty1">
+                            <i class="fa-solid fa-cart-shopping  "></i>
+                        </a>
+                        <!-- Pop Name Product  -->
+                        <!-- Modal -->
+                        <div class="modal fade" id="CartBeauty1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog  modal-dialog-centered">
+                                <div class="modal-content ">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Beauty Tools </h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body ">
+                                        <div class="card  mb-3" style="max-width: 540px;">
+                                            <div class="row g-0">
+                                                <div class="col-md-4">
+                                                    <img src="./Images/Beauty/Beauty5.png" class="  ss" alt="...">
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title text-light fs-4 fw-bolder"> Name :Beauty 1
+                                                        </h5>
+                                                        <p class="card-text text-light fs-5 fw-bold"> Salary : 150$ </p>
+                                                        <p class="card-text text-light  fs-5 text-break ">specifications
+                                                            : Calvin Klein Sheer Beauty for Women - Eau de Toilette,
+                                                            100ml
+                                                        </p>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer border-top-0">
+                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel
+                                            Order
+                                        </button>
+                                        <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap"
+                                            role="button" data-bs-dismiss="modal">Order Request
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Pop Name Product  -->
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- product Two -->
+            <div class="cardProduct">
+                <img class="img-product" src="./Images/Beauty/Beauty4.png" alt="Card image cap">
+                <div class="Cottant-card ">
+                    <div class="NameProduct">
+                        <h3>Beauty 2 </h3>
+                        <span>150 $</span>
+                    </div>
+                    <div class="CartProduct">
+                        <!-- Button trigger modal -->
+                        <a href="" data-bs-toggle="modal" data-bs-target="#CartBeauty2">
+                            <i class="fa-solid fa-cart-shopping  "></i>
+                        </a>
+                        <!-- Pop Name Product  -->
+                        <!-- Modal -->
+                        <div class="modal fade" id="CartBeauty2" tabindex="-1" aria-labelledby="exampleModalLabe2"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content ">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabe2">Beauty Tools </h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body ">
+                                        <div class="card  mb-3" style="max-width: 540px;">
+                                            <div class="row g-0">
+                                                <div class="col-md-4">
+                                                    <img src="./Images/Beauty/Beauty4.png" class="  ss" alt="...">
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title text-light fs-4 fw-bolder"> Name : Beauty
+                                                            2
+                                                        </h5>
+                                                        <p class="card-text text-light fs-5 fw-bold"> Salary : 150$ </p>
+                                                        <p class="card-text text-light  fs-5 text-break ">specifications
+                                                            : Calvin Klein Sheer Beauty for Women - Eau de Toilette,
+                                                            100ml
+                                                        </p>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer border-top-0">
+                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel
+                                            Order
+                                        </button>
+                                        <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap"
+                                            role="button" data-bs-dismiss="modal">Order Request
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Pop Name Product  -->
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- product Three -->
+            <div class="cardProduct">
+                <img class="img-product" src="./Images/Beauty/Beauty3.png" alt="Card image cap">
+                <div class="Cottant-card ">
+                    <div class="NameProduct">
+                        <h3>Beauty 3 </h3>
+                        <span>150 $</span>
+                    </div>
+                    <div class="CartProduct">
+                        <!-- Button trigger modal -->
+                        <a href="" data-bs-toggle="modal" data-bs-target="#CartBeauty3">
+                            <i class="fa-solid fa-cart-shopping  "></i>
+                        </a>
+                        <!-- Pop Name Product  -->
+                        <!-- Modal -->
+                        <div class="modal fade" id="CartBeauty3" tabindex="-1" aria-labelledby="exampleModalLabe3"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content ">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabe3">Beauty Tools </h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body ">
+                                        <div class="card  mb-3" style="max-width: 540px;">
+                                            <div class="row g-0">
+                                                <div class="col-md-4">
+                                                    <img src="./Images/Beauty/Beauty3.png" class="  ss" alt="...">
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title text-light fs-4 fw-bolder"> Name : Beauty
+                                                            3
+                                                        </h5>
+                                                        <p class="card-text text-light fs-5 fw-bold"> Salary : 150$ </p>
+                                                        <p class="card-text text-light  fs-5 text-break ">specifications
+                                                            : Calvin Klein Sheer Beauty for Women - Eau de Toilette,
+                                                            100ml
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer border-top-0">
+                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel
+                                            Order
+                                        </button>
+                                        <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap"
+                                            role="button" data-bs-dismiss="modal">Order Request
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Pop Name Product  -->
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End   Product Beauty Tools -->
+    <!-- Start Section Contact -->
+    <section class="container Contact  align-items-center" id="Contact">
+        <h2 class="text-center headerProduct">Contact</h2>
+        <div class="row  row-cols-1 row-cols-md-2 g-4">
+            <div class="col-md-4 col-sm-12 ">
+                <div class="row g-3">
+                    <div class="card col-12">
+                        <div class="card-body">
+                            <div class="info-icon">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div class="info-formtion">
+                                <h2>Phone number</h2>
+                                <p>+2098845587</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="card col-12">
+                        <div class="card-body">
+                            <div class="info-icon">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="info-formtion">
+                                <h2>Email address</h2>
+                                <p>+2098845587</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card col-12">
+                        <div class="card-body">
+                            <div class="info-icon">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div class="info-formtion">
+                                <h2>Loca & Address</h2>
+                                <p>+2098845587</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="card p-3">
+                    <div class="infoForm">
+                        <h2>Send massege</h2>
+                        <p>Tell us what you want</p>
+                    </div>
+                    <form class="row g-3">
+                        <div class="col-md-6">
+                            <input type="email" class="form-control" id="inputEmail4" placeholder="Your name">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="password" class="form-control" id="inputPassword4" placeholder="Email address">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" placeholder="Subject" id="inputEmail4">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="tel" class="form-control" placeholder="Phone number" id="inputPassword4">
+                        </div>
+                        <div class="col-12">
+                            <div class="mb-3">
+                                <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Massage"
+                                    rows="6"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary">Send </button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- End Section Contact -->
+    <!-- Start Footer  -->
+    <footer class="footer ">
+        <section class="containerfooter">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Our Pages</h4>
+                    <ul>
+                        <li><a href="#">Home </a></li>
+                        <li><a href="#">About </a></li>
+                        <li><a href="#">Product </a></li>
+                        <li><a href="#">Contact </a></li>
+
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Help & Advice:</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">order status</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="#">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13750.116207241956!2d31.13661555!3d30.5060759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sar!2seg!4v1689046929111!5m2!1sar!2seg"
+                                    width="200" height="110" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                            </a></li>
+                        <li><a href="#">+20 22222222</a></li>
+                        <li><a href="#">info@example.com</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <!-- End Footer  -->
+
+
+
+
+    <script src="/bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
